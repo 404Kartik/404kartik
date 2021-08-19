@@ -1,5 +1,5 @@
 # 404Kartik.me.io
-This is my portfolio/blog hosted at www.404Kartik.me
+This is my portfolio/blog hosted at www.404Kartik.com
 # Welcome to 404Kartik.me
 
 This website is created on Jekyll, Ruby, Javascript, JQuery, HTML & CSS and hosted on GitHub pages
@@ -17,7 +17,7 @@ Contact me to get a cup of coffee.
 
 ## How to contact me
 
-You can simply contact me through Linkedin on the bottom of : www.404Kartik.me
+You can simply contact me through Linkedin on the bottom of : www.404Kartik.com
 
 Alternatively:
 I have custom form on my website with which anyone can contact me.
