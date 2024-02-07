@@ -2,7 +2,7 @@
 This is my portfolio/blog hosted at www.404Kartik.com
 # Welcome to 404Kartik.me
 
-This website is created on Jekyll, Ruby, Javascript, JQuery, HTML & CSS and hosted on GitHub pages
+This website is created on Jekyll, Ruby, Javascript, JQuery, HTML & CSS and hosted on AWS
 
 
 # Purpose
