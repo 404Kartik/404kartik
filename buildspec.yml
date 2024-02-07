@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing Jekyll...
+      - gem install jekyll bundler
+  pre_build:
+    commands:
+      - echo Build started on `date`
+  build:
+    commands:
+      - echo Building the Jekyll site...
+      - jekyll build
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - aws s3 sync _site/ s3://www.404kartik.com --delete
