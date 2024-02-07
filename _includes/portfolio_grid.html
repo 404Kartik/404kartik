@@ -27,12 +27,18 @@
             min-height: 80%;
             background: rgba(0, 0, 0, 0.8);
             display: flex;
-            flex-wrap: no-wrap;
+            flex-wrap: nowrap;
         }
-
+        * {
+  box-sizing: border-box;
+}
+.modal-info, #modal-image {
+  max-height: 100%; /* or a fixed height if needed */
+  overflow: auto; /* Add scroll if content is larger than container */
+}
         #modal-image {
-            width: 55%;
-            height: 100%;
+            width: 100%;
+            height: auto;
             background: black;
             background-size: cover;
             display: flex;
@@ -131,6 +137,37 @@
     </div>
 
     <body style="margin-top: -40px;">
+        <div class="newcontainer">
+
+            <div class="modal-project">
+                <div class="modal-info">
+                    <div class="modal-i-body">
+                        <div class="modal-i-tags">
+                            <h1>RetroAI+</h1>
+                            <div class="tag"> AWS </div>
+                            <div class="tag"> CI/CD </div>
+                            <div class="tag"> Lambda Functions </div>
+                            <div class="tag"> AI </div>
+                            <div class="tag"> ChatGPT APIs </div>
+                        </div>
+                        <div class="modal-i-tags">
+                           <a href="http://retroaiplus-frontend-host.s3-website-ap-southeast-2.amazonaws.com/"> <button class="btn-link"><i class="fa fa-code" aria-hidden="true"></i> Live Demo </button></a>
+                            
+                        </div>
+                        <h2>Project Description</h2>
+                        RetroAI+ is an extension of the RetroAI project under the supervision of Shine Solutions Melbourne as a part of my final year Software Engineering project.
+                        RetroAI+ added a bunch of AI capabilities to the projects including: 
+                        <li>Sorting comments into "What went well", "What could've gone better" & "What did not go well"</li>
+                        <li>AI summary for the Retro being performed</li>
+                        <li>AI Generated section for Sprint summary using ChatGPTs APIs</li>
+                        For myself this project was about learning Devops in these AI driven projects, even though we faced issues with Devops as the project was inherited and no one really likes inherited code but we were able to deliver before time
+                    </div>
+                </div>
+                <div id="modal-image"><img style=" " src="img\RetroAI+.png"/></div>
+            </div>
+        </div>
+
+
         <div class="newcontainer">
 
             <div class="modal-project">
