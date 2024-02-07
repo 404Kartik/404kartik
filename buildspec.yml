@@ -3,15 +3,18 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo Installing Jekyll...
-      - gem install jekyll bundler
+      - echo Installing Ruby and Bundler...
+      - gem install bundler
+      - bundler -v
+      - echo Installing required gems...
+      - bundle install # Ensure all dependencies are installed
   pre_build:
     commands:
       - echo Build started on `date`
   build:
     commands:
       - echo Building the Jekyll site...
-      - jekyll build
+      - jekyll build # This will use gems specified in your Gemfile
   post_build:
     commands:
       - echo Build completed on `date`
