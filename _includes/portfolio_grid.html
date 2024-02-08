@@ -2,6 +2,8 @@
 <!-- Start WOWSlider.com HEAD section -->
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         /* html, body{
     padding: 0;
@@ -9,6 +11,14 @@
       background: url(https://picsum.photos/1280/1280?color) no-repeat center center;
       background-size: cover; 
   } */
+  @media only screen and (max-width: 768px) {
+    /* Add styles for screens that are less than 768px wide */
+    img {
+        width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+    /* Adjust layout, font-sizes, and other properties as needed */
+}
 
         .newcontainer {
 
