@@ -11,19 +11,76 @@
       background: url(https://picsum.photos/1280/1280?color) no-repeat center center;
       background-size: cover; 
   } */
-  @media only screen and (max-width: 768px) {
-    /* Add styles for screens that are less than 768px wide */
-    img {
+
+.modal-i-body {
+    font-size: 1em; /* Adjust text size as needed */
+    word-wrap: break-word; /* Ensures words break to prevent overflow */
+}
+
+/* Adjust font size for smaller devices */
+@media only screen and (max-width: 768px) {
+     img {
         width: 100%; /* Make images responsive */
         height: auto; /* Maintain aspect ratio */
     }
-    /* Adjust layout, font-sizes, and other properties as needed */
+  .modal-info {
+     width: 100%; /* Full width */
+    height: auto; /* Height adjusted to maintain aspect ratio of the content */
+    order: 1; /* Display this first */
+    overflow-y: auto;
+  }
+
+  #modal-image {
+    width: 100%; /* Full width */
+    height: auto; /* Height adjusted to maintain aspect ratio of the image */
+    order: 2; /* Display this after the .modal-info */
+    background: none; 
+  }
+
+  .modal-project {
+    flex-direction: column; /* Stack children vertically */
+     height: auto;
+  }
+
+  /* Additional styles for responsiveness */
+  .modal-info, #modal-image img {
+    max-width: 100%; /* Ensure no max-width is restricting the width */
+    height: auto; /* Adjust height automatically */
+  }
 }
 
-        .newcontainer {
 
+ 
+
+
+
+ 
+
+  #modal-image {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Height adjusted to maintain aspect ratio of the image */
+    order: 2; /* Image comes after the info */
+  }
+
+  #modal-image img {
+    width: 100%; /* Use 100% of the container width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; 
+  }
+  
+  /* Ensure the container takes up the necessary space and centers the content */
+  .newcontainer {
+    height: auto;
+    min-height: 100vh; /* At least full height of viewport, can grow */
+    display: block; /* Switch to block if flex settings are causing issues */
+    padding: 20px; /* Add some padding */
+  }
+
+
+        .newcontainer {
+            flex-direction: column; 
             width: 100vw;
-            height: 100vh;
+            height: auto;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -36,8 +93,11 @@
             height: 450px;
             min-height: 80%;
             background: rgba(0, 0, 0, 0.8);
-            display: flex;
             flex-wrap: nowrap;
+            display: flex;
+            flex-direction: row; /* Set side by side on large screens */
+            justify-content: center; /* Center the content */
+            align-items: flex-start; /* Align items to the start */
         }
         * {
   box-sizing: border-box;
