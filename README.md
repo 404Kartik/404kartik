@@ -9,7 +9,7 @@ This website is created on Jekyll, Ruby, Javascript, JQuery, HTML & CSS and host
 I created this website to write my publish my blogs, videos and all the other cool stuff I do as a developer on daily basis
 
 ## About me
-My name is Kartik, I study Computer Science at RMIT University Melbourne.
+My name is Kartik, a Software Engineering Graduate from RMIT University Melbourne.
 I am highly interested in Amazon Web Services, Java Development and Data Science & Analytics.
 Contact me to get a cup of coffee.
 
