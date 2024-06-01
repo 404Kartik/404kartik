@@ -19,7 +19,8 @@ phases:
     commands:
       - echo Build completed on `date`
       - aws s3 sync _site/ s3://404kartik.com --delete
-  artifacts:
+
+artifacts:
   files:
     - '**/*'
   base-directory: build
